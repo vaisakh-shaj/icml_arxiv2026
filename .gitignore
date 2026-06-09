@@ -1,0 +1,26 @@
+# LaTeX build artifacts
+*.aux
+# NOTE: *.bbl is intentionally NOT ignored — arXiv needs gauss_icml2026.bbl in the upload.
+*.blg
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+
+# Editor / sync metadata
+.overleaf/
+*.bak
+*.tex.bak
+
+# OS / misc
+nul
+.DS_Store

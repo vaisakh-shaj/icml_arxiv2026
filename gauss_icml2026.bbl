@@ -1,0 +1,463 @@
+\begin{thebibliography}{66}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agarwal et~al.(2025)Agarwal, Dalal, and Misra]{agarwal2025bayesian}
+Agarwal, N., Dalal, S.~R., and Misra, V.
+\newblock The bayesian geometry of transformer attention.
+\newblock \emph{arXiv preprint arXiv:2512.22471}, 2025.
+
+\bibitem[Alonso et~al.(2025)Alonso, Sieber, and Zeilinger]{alonso2025state}
+Alonso, C.~A., Sieber, J., and Zeilinger, M.~N.
+\newblock State space models as foundation models: A control theoretic
+  overview.
+\newblock In \emph{2025 American Control Conference (ACC)}, pp.\  146--153.
+  IEEE, 2025.
+
+\bibitem[Anderson \& Moore(2005)Anderson and Moore]{anderson2005optimal}
+Anderson, B.~D. and Moore, J.~B.
+\newblock \emph{Optimal filtering}.
+\newblock Courier Corporation, 2005.
+
+\bibitem[Arora et~al.(2023)Arora, Eyuboglu, Timalsina, Johnson, Poli, Zou,
+  Rudra, and R{\'e}]{arora2023zoology}
+Arora, S., Eyuboglu, S., Timalsina, A., Johnson, I., Poli, M., Zou, J., Rudra,
+  A., and R{\'e}, C.
+\newblock Zoology: Measuring and improving recall in efficient language models.
+\newblock \emph{arXiv preprint arXiv:2312.04927}, 2023.
+
+\bibitem[Beck et~al.(2024)Beck, P{\"o}ppel, Spanring, Auer, Prudnikova, Kopp,
+  Klambauer, Brandstetter, and Hochreiter]{beck2024xlstm}
+Beck, M., P{\"o}ppel, K., Spanring, M., Auer, A., Prudnikova, O., Kopp, M.,
+  Klambauer, G., Brandstetter, J., and Hochreiter, S.
+\newblock {xLSTM}: Extended long short-term memory.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  37:\penalty0 107547--107603, 2024.
+
+\bibitem[Becker et~al.(2019)Becker, Pandya, Gebhardt, Zhao, Taylor, and
+  Neumann]{becker2019rkn}
+Becker, P., Pandya, H., Gebhardt, G., Zhao, C., Taylor, C.~J., and Neumann, G.
+\newblock Recurrent {K}alman networks: Factorized inference in high-dimensional
+  deep feature spaces.
+\newblock In \emph{Proceedings of the 36th International Conference on Machine
+  Learning}, volume~97 of \emph{Proceedings of Machine Learning Research}, pp.\
+   544--552. PMLR, 2019.
+
+\bibitem[Becker et~al.(2024)Becker, Freymuth, and Neumann]{becker2024kalmamba}
+Becker, P., Freymuth, N., and Neumann, G.
+\newblock {KalMamba}: Towards efficient probabilistic state space models for
+  {RL} under uncertainty.
+\newblock In \emph{ICML 2024 Workshop: Aligning Reinforcement Learning
+  Experimentalists and Theorists}, 2024.
+
+\bibitem[Bisk et~al.(2020)Bisk, Zellers, Gao, Choi, et~al.]{bisk2020piqa}
+Bisk, Y., Zellers, R., Gao, J., Choi, Y., et~al.
+\newblock Piqa: Reasoning about physical commonsense in natural language.
+\newblock In \emph{Proceedings of the AAAI conference on artificial
+  intelligence}, volume~34, pp.\  7432--7439, 2020.
+
+\bibitem[Blelloch(1990)]{blelloch1990prefix}
+Blelloch, G.~E.
+\newblock Prefix sums and their applications.
+\newblock In \emph{Synthesis of Parallel Algorithms}, pp.\  35--60. Morgan
+  Kaufmann, 1990.
+
+\bibitem[Broadbent(1957)]{broadbent1957mechanical}
+Broadbent, D.~E.
+\newblock A mechanical model for human attention and immediate memory.
+\newblock \emph{Psychological review}, 64\penalty0 (3):\penalty0 205, 1957.
+
+\bibitem[Clark et~al.(2019)Clark, Lee, Chang, Kwiatkowski, Collins, and
+  Toutanova]{clark2019boolq}
+Clark, C., Lee, K., Chang, M.-W., Kwiatkowski, T., Collins, M., and Toutanova,
+  K.
+\newblock Boolq: Exploring the surprising difficulty of natural yes/no
+  questions.
+\newblock In \emph{Proceedings of the 2019 conference of the north American
+  chapter of the association for computational linguistics: Human language
+  technologies, volume 1 (long and short papers)}, pp.\  2924--2936, 2019.
+
+\bibitem[Clark et~al.(2018)Clark, Cowhey, Etzioni, Khot, Sabharwal, Schoenick,
+  and Tafjord]{clark2018think}
+Clark, P., Cowhey, I., Etzioni, O., Khot, T., Sabharwal, A., Schoenick, C., and
+  Tafjord, O.
+\newblock Think you have solved question answering? try arc, the ai2 reasoning
+  challenge.
+\newblock \emph{arXiv preprint arXiv:1803.05457}, 2018.
+
+\bibitem[Dao \& Gu(2024)Dao and Gu]{dao2024transformers}
+Dao, T. and Gu, A.
+\newblock Transformers are ssms: Generalized models and efficient algorithms
+  through structured state space duality.
+\newblock \emph{arXiv preprint arXiv:2405.21060}, 2024.
+
+\bibitem[Deutsch \& Deutsch(1963)Deutsch and Deutsch]{deutsch1963attention}
+Deutsch, J.~A. and Deutsch, D.
+\newblock Attention: Some theoretical considerations.
+\newblock \emph{Psychological review}, 70\penalty0 (1):\penalty0 80, 1963.
+
+\bibitem[Feldman \& Friston(2010)Feldman and Friston]{feldman2010attention}
+Feldman, H. and Friston, K.~J.
+\newblock Attention, uncertainty, and free-energy.
+\newblock \emph{Frontiers in human neuroscience}, 4:\penalty0 215, 2010.
+
+\bibitem[Fraccaro et~al.(2016)Fraccaro, S{\o}nderby, Paquet, and
+  Winther]{fraccaro2017rssm}
+Fraccaro, M., S{\o}nderby, S.~K., Paquet, U., and Winther, O.
+\newblock Sequential neural models with stochastic layers.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~29, pp.\  2207--2215, 2016.
+
+\bibitem[Grazzi et~al.(2025)Grazzi, Siems, Franke, Zela, Hutter, and
+  Pontil]{grazzi2024unlocking}
+Grazzi, R., Siems, J., Franke, J. K.~H., Zela, A., Hutter, F., and Pontil, M.
+\newblock Unlocking state-tracking in linear {RNN}s through negative
+  eigenvalues.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025.
+
+\bibitem[Gu \& Dao(2023)Gu and Dao]{gu2023mamba}
+Gu, A. and Dao, T.
+\newblock Mamba: Linear-time sequence modeling with selective state spaces.
+\newblock \emph{arXiv preprint arXiv:2312.00752}, 2023.
+
+\bibitem[Gu et~al.(2021)Gu, Goel, and Re]{gu2021efficiently}
+Gu, A., Goel, K., and Re, C.
+\newblock Efficiently modeling long sequences with structured state spaces.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Gupta et~al.(2022)Gupta, Gu, and Berant]{gupta2022simplifying}
+Gupta, A., Gu, A., and Berant, J.
+\newblock Diagonal state spaces are as effective as structured state spaces.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~35, pp.\  22982--22994, 2022.
+
+\bibitem[Haarnoja et~al.(2017)Haarnoja, Tang, Abbeel, and
+  Levine]{haarnoja2016rl}
+Haarnoja, T., Tang, H., Abbeel, P., and Levine, S.
+\newblock Reinforcement learning with deep energy-based policies.
+\newblock In \emph{International Conference on Machine Learning}, volume~70 of
+  \emph{Proceedings of Machine Learning Research}, pp.\  1352--1361. PMLR,
+  2017.
+
+\bibitem[Hafner et~al.(2019)Hafner, Lillicrap, Fischer, Villegas, Ha, Lee, and
+  Davidson]{hafner2019planet}
+Hafner, D., Lillicrap, T., Fischer, I., Villegas, R., Ha, D., Lee, H., and
+  Davidson, J.
+\newblock Learning latent dynamics for planning from pixels.
+\newblock In \emph{Proceedings of the 36th International Conference on Machine
+  Learning}, volume~97 of \emph{Proceedings of Machine Learning Research}, pp.\
+   2555--2565. PMLR, 2019.
+
+\bibitem[Hafner et~al.(2020)Hafner, Lillicrap, Ba, and
+  Norouzi]{hafner2020dreamer}
+Hafner, D., Lillicrap, T., Ba, J., and Norouzi, M.
+\newblock Dream to control: Learning behaviors by latent imagination.
+\newblock In \emph{International Conference on Learning Representations}, 2020.
+
+\bibitem[Hatamizadeh et~al.(2026)Hatamizadeh, Choi, and
+  Kautz]{hatamizadeh2026gated}
+Hatamizadeh, A., Choi, Y., and Kautz, J.
+\newblock Gated deltanet-2: Decoupling erase and write in linear attention.
+\newblock \emph{arXiv preprint arXiv:2605.22791}, 2026.
+
+\bibitem[Hoffmann et~al.(2022)Hoffmann, Borgeaud, Mensch, Buchatskaya, Cai,
+  Rutherford, de~Las~Casas, Hendricks, Welbl, Clark, Hennigan, Noland,
+  Millican, van~den Driessche, Damoc, Guy, Osindero, Simonyan, Elsen, Vinyals,
+  Rae, and Sifre]{hoffmann2022training}
+Hoffmann, J., Borgeaud, S., Mensch, A., Buchatskaya, E., Cai, T., Rutherford,
+  E., de~Las~Casas, D., Hendricks, L.~A., Welbl, J., Clark, A., Hennigan, T.,
+  Noland, E., Millican, K., van~den Driessche, G., Damoc, B., Guy, A.,
+  Osindero, S., Simonyan, K., Elsen, E., Vinyals, O., Rae, J.~W., and Sifre, L.
+\newblock Training compute-optimal large language models.
+\newblock In \emph{Proceedings of the 36th International Conference on Neural
+  Information Processing Systems}, 2022.
+
+\bibitem[Kalman(1960)]{kalman1960new}
+Kalman, R.~E.
+\newblock A new approach to linear filtering and prediction problems.
+\newblock \emph{Transactions of the ASME--Journal of Basic Engineering},
+  82\penalty0 (Series D):\penalty0 35--45, 1960.
+
+\bibitem[Karl et~al.(2017)Karl, S{\"o}lch, Bayer, and van~der
+  Smagt]{karl2016dsvae}
+Karl, M., S{\"o}lch, M., Bayer, J., and van~der Smagt, P.
+\newblock Deep variational {B}ayes filters: Unsupervised learning of state
+  space models from raw data.
+\newblock In \emph{Proceedings of the International Conference on Learning
+  Representations}, 2017.
+
+\bibitem[Karpathy(2025)]{nanochat}
+Karpathy, A.
+\newblock nanochat: The best chatgpt that \$100 can buy, 2025.
+\newblock URL \url{https://github.com/karpathy/nanochat}.
+
+\bibitem[Katharopoulos et~al.(2020)Katharopoulos, Vyas, Pappas, and
+  Fleuret]{katharopoulos2020transformers}
+Katharopoulos, A., Vyas, A., Pappas, N., and Fleuret, F.
+\newblock Transformers are {RNNs}: Fast autoregressive transformers with linear
+  attention.
+\newblock In \emph{International conference on machine learning}, pp.\
+  5156--5165. PMLR, 2020.
+
+\bibitem[Khan(2005)]{khan2005matrix}
+Khan, M.~E.
+\newblock Matrix inversion lemma and information filter.
+\newblock \emph{Honeywell Techonology Solutions Lab, Bangalore, India}, 2005.
+
+\bibitem[Kingma \& Ba(2015)Kingma and Ba]{KingmaB14}
+Kingma, D.~P. and Ba, J.
+\newblock Adam: A method for stochastic optimization.
+\newblock In \emph{International Conference on Learning Representations}, 2015.
+
+\bibitem[Krishnan et~al.(2015)Krishnan, Shalit, and Sontag]{krishnan2015deepkf}
+Krishnan, R.~G., Shalit, U., and Sontag, D.
+\newblock Deep {K}alman filters.
+\newblock \emph{arXiv preprint arXiv:1511.05121}, 2015.
+
+\bibitem[Krishnan et~al.(2017)Krishnan, Shalit, and
+  Sontag]{krishnan2017structured}
+Krishnan, R.~G., Shalit, U., and Sontag, D.
+\newblock Structured inference networks for nonlinear state space models.
+\newblock In \emph{Proceedings of the Thirty-First AAAI Conference on
+  Artificial Intelligence}, pp.\  2101--2109, 2017.
+
+\bibitem[Liu et~al.(2025)Liu, Wang, Wu, Feng, Stone, and Liu]{liu2025longhorn}
+Liu, B., Wang, R., Wu, L., Feng, Y., Stone, P., and Liu, Q.
+\newblock Longhorn: State space models are amortized online learners.
+\newblock In \emph{International Conference on Learning Representations},
+  volume 2025, pp.\  95419--95434, 2025.
+
+\bibitem[Luis et~al.(2024)Luis, Bottero, Vinogradska, Berkenkamp, and
+  Peters]{luis2024uncertainty}
+Luis, C.~E., Bottero, A.~G., Vinogradska, J., Berkenkamp, F., and Peters, J.
+\newblock Uncertainty representations in state-space layers for deep
+  reinforcement learning under partial observability.
+\newblock \emph{arXiv preprint arXiv:2409.16824}, 2024.
+
+\bibitem[McIntosh-Smith et~al.(2024)McIntosh-Smith, Alam, and
+  Woods]{mcintosh2024isambard}
+McIntosh-Smith, S., Alam, S., and Woods, C.
+\newblock Isambard-{AI}: a leadership-class supercomputer optimised
+  specifically for {A}rtificial {I}ntelligence.
+\newblock In \emph{Proceedings of the Cray User Group}, pp.\  44--54. 2024.
+
+\bibitem[Merrill \& Sabharwal(2023)Merrill and
+  Sabharwal]{merrill2023parallelism}
+Merrill, W. and Sabharwal, A.
+\newblock The parallelism tradeoff: Limitations of log-precision transformers.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  11:\penalty0 531--545, 2023.
+
+\bibitem[Merrill et~al.(2024)Merrill, Petty, and
+  Sabharwal]{merrill2024illusion}
+Merrill, W., Petty, J., and Sabharwal, A.
+\newblock The illusion of state in state-space models.
+\newblock \emph{arXiv preprint arXiv:2404.08819}, 2024.
+
+\bibitem[Mihaylov et~al.(2018)Mihaylov, Clark, Khot, and
+  Sabharwal]{mihaylov2018can}
+Mihaylov, T., Clark, P., Khot, T., and Sabharwal, A.
+\newblock Can a suit of armor conduct electricity? a new dataset for open book
+  question answering.
+\newblock In \emph{Proceedings of the 2018 conference on empirical methods in
+  natural language processing}, pp.\  2381--2391, 2018.
+
+\bibitem[Muca~Cirone et~al.(2024)Muca~Cirone, Orvieto, Walker, Salvi, and
+  Lyons]{muca2024theoretical}
+Muca~Cirone, N., Orvieto, A., Walker, B., Salvi, C., and Lyons, T.
+\newblock Theoretical foundations of deep selective state-space models.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  37:\penalty0 127226--127272, 2024.
+
+\bibitem[Nielsen \& Garcia(2009)Nielsen and Garcia]{nielsen2009statistical}
+Nielsen, F. and Garcia, V.
+\newblock Statistical exponential families: A digest with flash cards.
+\newblock \emph{arXiv preprint arXiv:0911.4863}, 2009.
+
+\bibitem[Paperno et~al.(2016)Paperno, Kruszewski, Lazaridou, Pham, Bernardi,
+  Pezzelle, Baroni, Boleda, and Fern{\'a}ndez]{paperno2016lambada}
+Paperno, D., Kruszewski, G., Lazaridou, A., Pham, N.-Q., Bernardi, R.,
+  Pezzelle, S., Baroni, M., Boleda, G., and Fern{\'a}ndez, R.
+\newblock The lambada dataset: Word prediction requiring a broad discourse
+  context.
+\newblock In \emph{Proceedings of the 54th annual meeting of the association
+  for computational linguistics (volume 1: Long papers)}, pp.\  1525--1534,
+  2016.
+
+\bibitem[Paszke et~al.(2019)Paszke, Gross, Massa, Lerer, Bradbury, Chanan,
+  Killeen, Lin, Gimelshein, Antiga, Desmaison, Kopf, Yang, DeVito, Raison,
+  Tejani, Chilamkurthy, Steiner, Fang, Bai, and
+  Chintala]{paszkePyTorchImperativeStyle2019}
+Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen,
+  T., Lin, Z., Gimelshein, N., Antiga, L., Desmaison, A., Kopf, A., Yang, E.,
+  DeVito, Z., Raison, M., Tejani, A., Chilamkurthy, S., Steiner, B., Fang, L.,
+  Bai, J., and Chintala, S.
+\newblock {{PyTorch}}: {{An Imperative Style}}, {{High-Performance Deep
+  Learning Library}}.
+\newblock In \emph{Advances in {{Neural Information Processing Systems}}},
+  volume~32. Curran Associates, Inc., 2019.
+
+\bibitem[Penedo et~al.(2024)Penedo, Kydl\'{\i}\v{c}ek, allal, Lozhkov,
+  Mitchell, Raffel, Von~Werra, and Wolf]{penedo2024fineweb}
+Penedo, G., Kydl\'{\i}\v{c}ek, H., allal, L.~B., Lozhkov, A., Mitchell, M.,
+  Raffel, C., Von~Werra, L., and Wolf, T.
+\newblock The fineweb datasets: Decanting the web for the finest text data at
+  scale.
+\newblock In Globerson, A., Mackey, L., Belgrave, D., Fan, A., Paquet, U.,
+  Tomczak, J., and Zhang, C. (eds.), \emph{Advances in Neural Information
+  Processing Systems}, volume~37, pp.\  30811--30849, 2024.
+
+\bibitem[Peng et~al.(2026)Peng, Chattopadhyay, Zancato, Nunez, Xia, and
+  Soatto]{peng2026gated}
+Peng, L., Chattopadhyay, A., Zancato, L., Nunez, E., Xia, W., and Soatto, S.
+\newblock Gated kalmanet: A fading memory layer through test-time ridge
+  regression.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pp.\  20212--20222, 2026.
+
+\bibitem[Poli et~al.(2024)Poli, Thomas, Nguyen, Ponnusamy, Deiseroth, Kersting,
+  Suzuki, Hie, Ermon, Re, Zhang, and Massaroli]{poli2024mad}
+Poli, M., Thomas, A.~W., Nguyen, E., Ponnusamy, P., Deiseroth, B., Kersting,
+  K., Suzuki, T., Hie, B., Ermon, S., Re, C., Zhang, C., and Massaroli, S.
+\newblock Mechanistic design and scaling of hybrid architectures.
+\newblock In \emph{Proceedings of the 41st International Conference on Machine
+  Learning}, volume 235 of \emph{Proceedings of Machine Learning Research},
+  pp.\  40908--40950. PMLR, 2024.
+
+\bibitem[Rao \& Ballard(1999)Rao and Ballard]{rao1999predictive}
+Rao, R.~P. and Ballard, D.~H.
+\newblock Predictive coding in the visual cortex: a functional interpretation
+  of some extra-classical receptive-field effects.
+\newblock \emph{Nature neuroscience}, 2\penalty0 (1):\penalty0 79--87, 1999.
+
+\bibitem[Sakaguchi et~al.(2021)Sakaguchi, Bras, Bhagavatula, and
+  Choi]{sakaguchi2021winogrande}
+Sakaguchi, K., Bras, R.~L., Bhagavatula, C., and Choi, Y.
+\newblock Winogrande: An adversarial winograd schema challenge at scale.
+\newblock \emph{Communications of the ACM}, 64\penalty0 (9):\penalty0 99--106,
+  2021.
+
+\bibitem[S{\"a}rkk{\"a} \& Garc{\'\i}a-Fern{\'a}ndez(2020)S{\"a}rkk{\"a} and
+  Garc{\'\i}a-Fern{\'a}ndez]{sarkka2020temporal}
+S{\"a}rkk{\"a}, S. and Garc{\'\i}a-Fern{\'a}ndez, {\'A}.~F.
+\newblock Temporal parallelization of bayesian smoothers.
+\newblock \emph{IEEE Transactions on Automatic Control}, 66\penalty0
+  (1):\penalty0 299--306, 2020.
+
+\bibitem[Schlag et~al.(2021)Schlag, Irie, and Schmidhuber]{schlag2021linear}
+Schlag, I., Irie, K., and Schmidhuber, J.
+\newblock Linear transformers are secretly fast weight programmers.
+\newblock In \emph{International conference on machine learning}, pp.\
+  9355--9366. PMLR, 2021.
+
+\bibitem[Shaj et~al.(2021)Shaj, Becker, B{\"u}chler, Pandya, van Duijkeren,
+  Taylor, Hanheide, and Neumann]{shaj2021action}
+Shaj, V., Becker, P., B{\"u}chler, D., Pandya, H., van Duijkeren, N., Taylor,
+  C.~J., Hanheide, M., and Neumann, G.
+\newblock Action-conditional recurrent kalman networks for forward and inverse
+  dynamics learning.
+\newblock In \emph{Conference on Robot Learning}, pp.\  765--781. PMLR, 2021.
+
+\bibitem[Shaj~Kumar et~al.(2023)Shaj~Kumar, Gholam~Zadeh, Demir, Douat, and
+  Neumann]{shaj2023multi}
+Shaj~Kumar, V., Gholam~Zadeh, S., Demir, O., Douat, L., and Neumann, G.
+\newblock Multi time scale world models.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  36:\penalty0 26764--26775, 2023.
+
+\bibitem[Smith et~al.(2022)Smith, Warrington, and
+  Linderman]{smith2022simplified}
+Smith, J.~T., Warrington, A., and Linderman, S.
+\newblock Simplified state space layers for sequence modeling.
+\newblock In \emph{The Eleventh International Conference on Learning
+  Representations}, 2022.
+
+\bibitem[Storkey \& Valabregue(1997)Storkey and
+  Valabregue]{storkey1997hopfield}
+Storkey, A. and Valabregue, R.
+\newblock Hopfield learning rule with high capacity storage of time-correlated
+  patterns.
+\newblock \emph{Electronics Letters}, 33:\penalty0 1803 -- 1804, 11 1997.
+
+\bibitem[Team et~al.(2025)Team, Zhang, Lin, Yao, Hu, Meng, Liu, Men, Yang, Li,
+  et~al.]{team2025kimi}
+Team, K., Zhang, Y., Lin, Z., Yao, X., Hu, J., Meng, F., Liu, C., Men, X.,
+  Yang, S., Li, Z., et~al.
+\newblock Kimi linear: An expressive, efficient attention architecture.
+\newblock \emph{arXiv preprint arXiv:2510.26692}, 2025.
+
+\bibitem[Tillet et~al.(2019)Tillet, Kung, and Cox]{tillet2019triton}
+Tillet, P., Kung, H.-T., and Cox, D.
+\newblock Triton: an intermediate language and compiler for tiled neural
+  network computations.
+\newblock In \emph{Proceedings of the 3rd ACM SIGPLAN International Workshop on
+  Machine Learning and Programming Languages}, pp.\  10--19, 2019.
+
+\bibitem[Treisman(1969)]{treisman1969strategies}
+Treisman, A.~M.
+\newblock Strategies and models of selective attention.
+\newblock \emph{Psychological review}, 76\penalty0 (3):\penalty0 282, 1969.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
+  Kaiser, {\L}., and Polosukhin, I.
+\newblock Attention is all you need.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[von Oswald et~al.(2025)von Oswald, Scherrer, Kobayashi, Versari, Yang,
+  Schlegel, Maile, Schimpf, Sieberling, Meulemans, et~al.]{von2025mesanet}
+von Oswald, J., Scherrer, N., Kobayashi, S., Versari, L., Yang, S., Schlegel,
+  M., Maile, K., Schimpf, Y., Sieberling, O., Meulemans, A., et~al.
+\newblock Mesanet: Sequence modeling by locally optimal test-time training.
+\newblock \emph{arXiv preprint arXiv:2506.05233}, 2025.
+
+\bibitem[Wang et~al.(2025)Wang, Shi, and Fox]{wang2025test}
+Wang, K.~A., Shi, J., and Fox, E.~B.
+\newblock Test-time regression: a unifying framework for designing sequence
+  models with associative memory.
+\newblock \emph{arXiv preprint arXiv:2501.12352}, 2025.
+
+\bibitem[Watter et~al.(2015)Watter, Springenberg, Boedecker, and
+  Riedmiller]{watter2015e2c}
+Watter, M., Springenberg, J.~T., Boedecker, J., and Riedmiller, M.~A.
+\newblock Embed to control: A locally linear latent dynamics model for control
+  from raw images.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~28, pp.\  2746--2754, 2015.
+
+\bibitem[Yang et~al.(2021)Yang, Hu, Babuschkin, Sidor, Liu, Farhi, Ryder,
+  Pachocki, Chen, and Gao]{yang2021tuning}
+Yang, G., Hu, E., Babuschkin, I., Sidor, S., Liu, X., Farhi, D., Ryder, N.,
+  Pachocki, J., Chen, W., and Gao, J.
+\newblock Tuning large neural networks via zero-shot hyperparameter transfer.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:\penalty0 17084--17097, 2021.
+
+\bibitem[Yang et~al.(2023)Yang, Wang, Shen, Panda, and Kim]{yang2023gated}
+Yang, S., Wang, B., Shen, Y., Panda, R., and Kim, Y.
+\newblock Gated linear attention transformers with hardware-efficient training.
+\newblock \emph{arXiv preprint arXiv:2312.06635}, 2023.
+
+\bibitem[Yang et~al.(2024)Yang, Kautz, and Hatamizadeh]{yang2024gated}
+Yang, S., Kautz, J., and Hatamizadeh, A.
+\newblock Gated delta networks: Improving {Mamba2} with delta rule.
+\newblock \emph{arXiv preprint arXiv:2412.06464}, 2024.
+
+\bibitem[Yu \& Erichson(2025)Yu and Erichson]{yu2025block}
+Yu, A. and Erichson, N.~B.
+\newblock Block-biased mamba for long-range sequence processing.
+\newblock \emph{arXiv preprint arXiv:2505.09022}, 2025.
+
+\bibitem[Zellers et~al.(2019)Zellers, Holtzman, Bisk, Farhadi, and
+  Choi]{zellers2019hellaswag}
+Zellers, R., Holtzman, A., Bisk, Y., Farhadi, A., and Choi, Y.
+\newblock Hellaswag: Can a machine really finish your sentence?
+\newblock In \emph{Proceedings of the 57th annual meeting of the association
+  for computational linguistics}, pp.\  4791--4800, 2019.
+
+\end{thebibliography}
