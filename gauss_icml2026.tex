@@ -544,6 +544,7 @@ where $\mathbf{v}_t$ is token-derived content, $\mathbf{k}_t$ is an observation 
 \footnotesize
 \renewcommand{\arraystretch}{1.15}
 \setlength{\tabcolsep}{4pt}
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{@{}p{0.95in}p{1.1in}p{1.1in}@{}}
 \toprule
 \textbf{Attention} & \textbf{Deterministic SSM / GLA} & \textbf{\our (probabilistic)} \\
@@ -567,7 +568,8 @@ Output $\mathbf{y}_t$ & Output $\mathbf{y}_t$ & Output $\mathbf{y}_t$ \\
 \rowcolor{gray!8}
 \textcolor{gray}{---} & \textcolor{gray}{---} & Process noise $\bar{\mathbf{p}}_t = \tfrac{\mathbf{p}^2}{2\mathbf{a}}\odot(1-e^{-2\mathbf{a}\Delta t})$ \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \vspace{-0.15in}
 \end{table}
 \paragraph{Output readout as a query/task-conditioned projection of the belief state.}
