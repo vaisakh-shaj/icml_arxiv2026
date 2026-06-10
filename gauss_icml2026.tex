@@ -1694,7 +1694,7 @@ The forward-only pass uses a batch size of $1$, simulating test-time prompt proc
 \subsection{Equivalent Attention Matrix}
 \label{sec:attn-matrix}
 
-As shown in Theorem~\ref{thm:eta-affine}, the information-mean recurrence
+As shown in \Cref{thm:eta-affine}, the information-mean recurrence
 $\eta_t = f_t\,\eta_{t-1} + k_t\,\Lambda_t^{\mathrm{v}}\,v_t$ (\Cref{eq:mu-update})
 can be unrolled into a lower-triangular attention matrix~$\mathbf{W}$
 whose entries are products of
@@ -1747,7 +1747,7 @@ structure as a standard attention matrix; we therefore call it the
 \emph{Kalman Attention Matrix}.
 
 \Cref{fig:attn-sc,fig:attn-recall,fig:attn-mem} visualise the Kalman attention
-patterns learned by \our on three MADLAB tasks, each showing four randomly chosen
+patterns learned by \our on three MAD-Lab tasks, each showing four randomly chosen
 channels.
 The attention weight at position $(t,s)$ reflects how much the posterior mean at
 step $t$ is influenced by the observation at step $s$, weighted by the learned
@@ -2120,8 +2120,7 @@ Precision                            & fp32 & fp32 \\
 \end{tabular}
 \end{table}
 
-\paragraph{Zero-shot evaluation.} We report zero-shot performance with the LM
-Evaluation Harness~\citep{gao2021lmharness} on eight commonsense benchmarks:
+\paragraph{Zero-shot evaluation.} We report zero-shot performance on eight commonsense benchmarks:
 LAMBADA (OpenAI split)~\citep{paperno2016lambada},
 HellaSwag~\citep{zellers2019hellaswag}, PIQA~\citep{bisk2020piqa},
 ARC-Easy and ARC-Challenge~\citep{clark2018think},
