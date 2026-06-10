@@ -42,9 +42,8 @@ Beck, M., P{\"o}ppel, K., Spanring, M., Auer, A., Prudnikova, O., Kopp, M.,
 Becker, P., Pandya, H., Gebhardt, G., Zhao, C., Taylor, C.~J., and Neumann, G.
 \newblock Recurrent {K}alman networks: Factorized inference in high-dimensional
   deep feature spaces.
-\newblock In \emph{Proceedings of the 36th International Conference on Machine
-  Learning}, volume~97 of \emph{Proceedings of Machine Learning Research}, pp.\
-   544--552. PMLR, 2019.
+\newblock In \emph{International Conference on Machine Learning}, pp.\
+  544--552. PMLR, 2019.
 
 \bibitem[Becker et~al.(2024)Becker, Freymuth, and Neumann]{becker2024kalmamba}
 Becker, P., Freymuth, N., and Neumann, G.
@@ -56,8 +55,8 @@ Becker, P., Freymuth, N., and Neumann, G.
 \bibitem[Bisk et~al.(2020)Bisk, Zellers, Gao, Choi, et~al.]{bisk2020piqa}
 Bisk, Y., Zellers, R., Gao, J., Choi, Y., et~al.
 \newblock Piqa: Reasoning about physical commonsense in natural language.
-\newblock In \emph{Proceedings of the AAAI conference on artificial
-  intelligence}, volume~34, pp.\  7432--7439, 2020.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~34, pp.\  7432--7439, 2020.
 
 \bibitem[Blelloch(1990)]{blelloch1990prefix}
 Blelloch, G.~E.
@@ -108,16 +107,15 @@ Feldman, H. and Friston, K.~J.
   Winther]{fraccaro2017rssm}
 Fraccaro, M., S{\o}nderby, S.~K., Paquet, U., and Winther, O.
 \newblock Sequential neural models with stochastic layers.
-\newblock In \emph{Advances in Neural Information Processing Systems},
-  volume~29, pp.\  2207--2215, 2016.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  29:\penalty0 2207--2215, 2016.
 
 \bibitem[Grazzi et~al.(2025)Grazzi, Siems, Franke, Zela, Hutter, and
   Pontil]{grazzi2024unlocking}
 Grazzi, R., Siems, J., Franke, J. K.~H., Zela, A., Hutter, F., and Pontil, M.
 \newblock Unlocking state-tracking in linear {RNN}s through negative
   eigenvalues.
-\newblock In \emph{International Conference on Learning Representations
-  (ICLR)}, 2025.
+\newblock In \emph{International Conference on Learning Representations}, 2025.
 
 \bibitem[Gu \& Dao(2023)Gu and Dao]{gu2023mamba}
 Gu, A. and Dao, T.
@@ -132,25 +130,23 @@ Gu, A., Goel, K., and Re, C.
 \bibitem[Gupta et~al.(2022)Gupta, Gu, and Berant]{gupta2022simplifying}
 Gupta, A., Gu, A., and Berant, J.
 \newblock Diagonal state spaces are as effective as structured state spaces.
-\newblock In \emph{Advances in Neural Information Processing Systems},
-  volume~35, pp.\  22982--22994, 2022.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  35:\penalty0 22982--22994, 2022.
 
 \bibitem[Haarnoja et~al.(2017)Haarnoja, Tang, Abbeel, and
   Levine]{haarnoja2016rl}
 Haarnoja, T., Tang, H., Abbeel, P., and Levine, S.
 \newblock Reinforcement learning with deep energy-based policies.
-\newblock In \emph{International Conference on Machine Learning}, volume~70 of
-  \emph{Proceedings of Machine Learning Research}, pp.\  1352--1361. PMLR,
-  2017.
+\newblock In \emph{International Conference on Machine Learning}, pp.\
+  1352--1361. PMLR, 2017.
 
 \bibitem[Hafner et~al.(2019)Hafner, Lillicrap, Fischer, Villegas, Ha, Lee, and
   Davidson]{hafner2019planet}
 Hafner, D., Lillicrap, T., Fischer, I., Villegas, R., Ha, D., Lee, H., and
   Davidson, J.
 \newblock Learning latent dynamics for planning from pixels.
-\newblock In \emph{Proceedings of the 36th International Conference on Machine
-  Learning}, volume~97 of \emph{Proceedings of Machine Learning Research}, pp.\
-   2555--2565. PMLR, 2019.
+\newblock In \emph{International Conference on Machine Learning}, pp.\
+  2555--2565. PMLR, 2019.
 
 \bibitem[Hafner et~al.(2020)Hafner, Lillicrap, Ba, and
   Norouzi]{hafner2020dreamer}
@@ -173,8 +169,7 @@ Hoffmann, J., Borgeaud, S., Mensch, A., Buchatskaya, E., Cai, T., Rutherford,
   Noland, E., Millican, K., van~den Driessche, G., Damoc, B., Guy, A.,
   Osindero, S., Simonyan, K., Elsen, E., Vinyals, O., Rae, J.~W., and Sifre, L.
 \newblock Training compute-optimal large language models.
-\newblock In \emph{Proceedings of the 36th International Conference on Neural
-  Information Processing Systems}, 2022.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
 
 \bibitem[Kalman(1960)]{kalman1960new}
 Kalman, R.~E.
@@ -187,8 +182,7 @@ Kalman, R.~E.
 Karl, M., S{\"o}lch, M., Bayer, J., and van~der Smagt, P.
 \newblock Deep variational {B}ayes filters: Unsupervised learning of state
   space models from raw data.
-\newblock In \emph{Proceedings of the International Conference on Learning
-  Representations}, 2017.
+\newblock In \emph{International Conference on Learning Representations}, 2017.
 
 \bibitem[Karpathy(2025)]{nanochat}
 Karpathy, A.
@@ -200,7 +194,7 @@ Karpathy, A.
 Katharopoulos, A., Vyas, A., Pappas, N., and Fleuret, F.
 \newblock Transformers are {RNNs}: Fast autoregressive transformers with linear
   attention.
-\newblock In \emph{International conference on machine learning}, pp.\
+\newblock In \emph{International Conference on Machine Learning}, pp.\
   5156--5165. PMLR, 2020.
 
 \bibitem[Khan(2005)]{khan2005matrix}
@@ -222,14 +216,13 @@ Krishnan, R.~G., Shalit, U., and Sontag, D.
   Sontag]{krishnan2017structured}
 Krishnan, R.~G., Shalit, U., and Sontag, D.
 \newblock Structured inference networks for nonlinear state space models.
-\newblock In \emph{Proceedings of the Thirty-First AAAI Conference on
-  Artificial Intelligence}, pp.\  2101--2109, 2017.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, pp.\  2101--2109, 2017.
 
 \bibitem[Liu et~al.(2025)Liu, Wang, Wu, Feng, Stone, and Liu]{liu2025longhorn}
 Liu, B., Wang, R., Wu, L., Feng, Y., Stone, P., and Liu, Q.
 \newblock Longhorn: State space models are amortized online learners.
-\newblock In \emph{International Conference on Learning Representations},
-  volume 2025, pp.\  95419--95434, 2025.
+\newblock In \emph{International Conference on Learning Representations}, 2025.
 
 \bibitem[Luis et~al.(2024)Luis, Bottero, Vinogradska, Berkenkamp, and
   Peters]{luis2024uncertainty}
@@ -298,8 +291,7 @@ Paszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen,
   Bai, J., and Chintala, S.
 \newblock {{PyTorch}}: {{An Imperative Style}}, {{High-Performance Deep
   Learning Library}}.
-\newblock In \emph{Advances in {{Neural Information Processing Systems}}},
-  volume~32. Curran Associates, Inc., 2019.
+\newblock \emph{Advances in Neural Information Processing Systems}, 32, 2019.
 
 \bibitem[Penedo et~al.(2024)Penedo, Kydl\'{\i}\v{c}ek, allal, Lozhkov,
   Mitchell, Raffel, Von~Werra, and Wolf]{penedo2024fineweb}
@@ -307,9 +299,8 @@ Penedo, G., Kydl\'{\i}\v{c}ek, H., allal, L.~B., Lozhkov, A., Mitchell, M.,
   Raffel, C., Von~Werra, L., and Wolf, T.
 \newblock The fineweb datasets: Decanting the web for the finest text data at
   scale.
-\newblock In Globerson, A., Mackey, L., Belgrave, D., Fan, A., Paquet, U.,
-  Tomczak, J., and Zhang, C. (eds.), \emph{Advances in Neural Information
-  Processing Systems}, volume~37, pp.\  30811--30849, 2024.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  37:\penalty0 30811--30849, 2024.
 
 \bibitem[Peng et~al.(2026)Peng, Chattopadhyay, Zancato, Nunez, Xia, and
   Soatto]{peng2026gated}
@@ -324,9 +315,8 @@ Peng, L., Chattopadhyay, A., Zancato, L., Nunez, E., Xia, W., and Soatto, S.
 Poli, M., Thomas, A.~W., Nguyen, E., Ponnusamy, P., Deiseroth, B., Kersting,
   K., Suzuki, T., Hie, B., Ermon, S., Re, C., Zhang, C., and Massaroli, S.
 \newblock Mechanistic design and scaling of hybrid architectures.
-\newblock In \emph{Proceedings of the 41st International Conference on Machine
-  Learning}, volume 235 of \emph{Proceedings of Machine Learning Research},
-  pp.\  40908--40950. PMLR, 2024.
+\newblock In \emph{International Conference on Machine Learning}, pp.\
+  40908--40950. PMLR, 2024.
 
 \bibitem[Rao \& Ballard(1999)Rao and Ballard]{rao1999predictive}
 Rao, R.~P. and Ballard, D.~H.
@@ -351,7 +341,7 @@ S{\"a}rkk{\"a}, S. and Garc{\'\i}a-Fern{\'a}ndez, {\'A}.~F.
 \bibitem[Schlag et~al.(2021)Schlag, Irie, and Schmidhuber]{schlag2021linear}
 Schlag, I., Irie, K., and Schmidhuber, J.
 \newblock Linear transformers are secretly fast weight programmers.
-\newblock In \emph{International conference on machine learning}, pp.\
+\newblock In \emph{International Conference on Machine Learning}, pp.\
   9355--9366. PMLR, 2021.
 
 \bibitem[Shaj et~al.(2021)Shaj, Becker, B{\"u}chler, Pandya, van Duijkeren,
@@ -373,8 +363,7 @@ Shaj~Kumar, V., Gholam~Zadeh, S., Demir, O., Douat, L., and Neumann, G.
   Linderman]{smith2022simplified}
 Smith, J.~T., Warrington, A., and Linderman, S.
 \newblock Simplified state space layers for sequence modeling.
-\newblock In \emph{The Eleventh International Conference on Learning
-  Representations}, 2022.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
 
 \bibitem[Storkey \& Valabregue(1997)Storkey and
   Valabregue]{storkey1997hopfield}
@@ -407,7 +396,7 @@ Treisman, A.~M.
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
   Kaiser, {\L}., and Polosukhin, I.
 \newblock Attention is all you need.
-\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+\newblock \emph{Advances in Neural Information Processing Systems}, 30, 2017.
 
 \bibitem[von Oswald et~al.(2025)von Oswald, Scherrer, Kobayashi, Versari, Yang,
   Schlegel, Maile, Schimpf, Sieberling, Meulemans, et~al.]{von2025mesanet}
@@ -427,8 +416,8 @@ Wang, K.~A., Shi, J., and Fox, E.~B.
 Watter, M., Springenberg, J.~T., Boedecker, J., and Riedmiller, M.~A.
 \newblock Embed to control: A locally linear latent dynamics model for control
   from raw images.
-\newblock In \emph{Advances in Neural Information Processing Systems},
-  volume~28, pp.\  2746--2754, 2015.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  28:\penalty0 2746--2754, 2015.
 
 \bibitem[Yang et~al.(2021)Yang, Hu, Babuschkin, Sidor, Liu, Farhi, Ryder,
   Pachocki, Chen, and Gao]{yang2021tuning}
