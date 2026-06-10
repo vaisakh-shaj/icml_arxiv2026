@@ -257,6 +257,8 @@ State-space language models such as Mamba and gated linear attention (GLA) offer
 
 \begin{table}[t]
 \centering
+\caption{High-level comparison of sequence-mixing primitives. \our combines the efficiency of SSMs with nonlinear (M\"obius) updates and explicit belief-state uncertainty.}
+\label{tab:comparison}
 \footnotesize
 \setlength{\tabcolsep}{5pt}
 \renewcommand{\arraystretch}{1.1}
@@ -273,8 +275,6 @@ Parallel training & \gmark & \gmark & \gmark \\
 \bottomrule
 \end{tabular}%
 }
-\caption{High-level comparison of sequence-mixing primitives. \our combines the efficiency of SSMs with nonlinear (M\"obius) updates and explicit belief-state uncertainty.}
-\label{tab:comparison}
 \vspace{-1.0em}
 \end{table}
 
@@ -539,6 +539,8 @@ where $\mathbf{v}_t$ is token-derived content, $\mathbf{k}_t$ is an observation 
 
 \begin{table}[t]
 \centering
+\caption{Notation alignment across attention, SSMs, and \our. Precisions ($\boldsymbol{\lambda}$, $\boldsymbol{\Lambda}^{\mathrm v}$, $\boldsymbol{\Lambda}^{\mathrm p}$) are inverse variances encoding confidence: higher precision means lower uncertainty.}
+\label{tab:notation-alignment}
 \footnotesize
 \renewcommand{\arraystretch}{1.15}
 \setlength{\tabcolsep}{4pt}
@@ -566,8 +568,6 @@ Output $\mathbf{y}_t$ & Output $\mathbf{y}_t$ & Output $\mathbf{y}_t$ \\
 \textcolor{gray}{---} & \textcolor{gray}{---} & Process noise $\bar{\mathbf{p}}_t = \tfrac{\mathbf{p}^2}{2\mathbf{a}}\odot(1-e^{-2\mathbf{a}\Delta t})$ \\
 \bottomrule
 \end{tabular}
-\caption{Notation alignment across attention, SSMs, and \our. Precisions ($\boldsymbol{\lambda}$, $\boldsymbol{\Lambda}^{\mathrm v}$, $\boldsymbol{\Lambda}^{\mathrm p}$) are inverse variances encoding confidence: higher precision means lower uncertainty.}
-\label{tab:notation-alignment}
 \vspace{-0.15in}
 \end{table}
 \paragraph{Output readout as a query/task-conditioned projection of the belief state.}
@@ -777,6 +777,8 @@ in \cref{sec:ablations}.\looseness-1
 
 \begin{table*}[t]
 \centering
+\caption{Local online objectives and state updates across linear-attention mixers. \fg{Orange} marks the forget gate (coefficient of $\mathbf{S}_{t-1}$), \wg{green} the write gate (coefficient of $\mathbf{k}_t\mathbf{v}_t^\top$), and \kl{blue} the quantities unique to KLA - the precision weights in the objective (the only \emph{precision-weighted} least-squares in the table, as marked by the underbrace) and the M\"obius recursion supplying $\bm{\Lambda}_t$. Subscript $t$ denotes per-token learned quantities; symbols without subscript denote global parameters. KLA differs structurally by deriving its gating from a coupled recursion - the matrix-M\"obius precision update of Theorem~1 (\cref{eq:kla-prec-mat}) - whose solution $\bm{\Lambda}_t$ supplies the precision-ratio gain visible in both forget and write terms.}
+\label{tab:online-learning}
 \scriptsize
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.55}
@@ -818,8 +820,6 @@ GDN-2~\citep{hatamizadeh2026gated} & $\|\mathbf{S}-\mathbf{D}_t\mathbf{S}_{t-1}\
 \bottomrule
 \end{tabular}%
 }
-\caption{Local online objectives and state updates across linear-attention mixers. \fg{Orange} marks the forget gate (coefficient of $\mathbf{S}_{t-1}$), \wg{green} the write gate (coefficient of $\mathbf{k}_t\mathbf{v}_t^\top$), and \kl{blue} the quantities unique to KLA - the precision weights in the objective (the only \emph{precision-weighted} least-squares in the table, as marked by the underbrace) and the M\"obius recursion supplying $\bm{\Lambda}_t$. Subscript $t$ denotes per-token learned quantities; symbols without subscript denote global parameters. KLA differs structurally by deriving its gating from a coupled recursion - the matrix-M\"obius precision update of Theorem~1 (\cref{eq:kla-prec-mat}) - whose solution $\bm{\Lambda}_t$ supplies the precision-ratio gain visible in both forget and write terms.}
-\label{tab:online-learning}
 \vspace{2pt}
 \begin{minipage}{\textwidth}
 \footnotesize $^{*}$\,For two matrices $\mathbf{A}, \mathbf{B}$ of equal shape we overload the fraction $\mathbf{A}/\mathbf{B}$ to denote \emph{element-wise} (Hadamard) division; products between vectors of equal dimension (e.g.\ $\mathbf{b}_t\mathbf{k}_t, \mathbf{w}_t\mathbf{v}_t, \bm{\Lambda}_t^v\mathbf{v}_t$) are element-wise. Vector outer products such as $\mathbf{k}_t\mathbf{v}_t^\top$ and $\mathbf{k}_t^{2}(\bm{\Lambda}_t^v)^\top$ form $d_k\!\times\!d_v$ matrices in the standard way.
@@ -990,6 +990,8 @@ The experiments above isolate \textsc{KLA} as a single ($1$-$2$ block) primitive
 
 \begin{table*}[!t]
 \centering
+\caption{\textbf{Language modelling at two academic scales.} Zero-shot accuracy (\%) on eight commonsense benchmarks at 45M ($1.8$B tokens) and 180M ($10.9$B tokens). \best{Bold} = best within each size block, \second{underline} = second. Rows above the dashed line are standalone mixers; the row below it is the hybrid GPT$+$\textsc{KLA}, in which only the \emph{final} attention layer of GPT is replaced with a \textsc{KLA} block. Per-size comparisons against the analogous GPT$+$Mamba and GPT$+$GDN hybrids are in \cref{fig:a5-min-layers}(b) and \cref{app:empirical}.}
+\label{tab:lm-main}
 \small
 \setlength{\tabcolsep}{4.5pt}
 \renewcommand{\arraystretch}{1.15}
@@ -1013,8 +1015,6 @@ KLA-180M             & 22.40 & \second{34.00} & \second{63.00} & 50.00 & 26.00 &
 \textbf{GPT+KLA-180M} & \best{30.20} & \best{34.40} & \best{64.20} & \best{55.80} & \best{29.00} & 51.80 & 31.00 & \best{63.20} & \best{44.95} \\
 \bottomrule
 \end{tabular}
-\caption{\textbf{Language modelling at two academic scales.} Zero-shot accuracy (\%) on eight commonsense benchmarks at 45M ($1.8$B tokens) and 180M ($10.9$B tokens). \best{Bold} = best within each size block, \second{underline} = second. Rows above the dashed line are standalone mixers; the row below it is the hybrid GPT$+$\textsc{KLA}, in which only the \emph{final} attention layer of GPT is replaced with a \textsc{KLA} block. Per-size comparisons against the analogous GPT$+$Mamba and GPT$+$GDN hybrids are in \cref{fig:a5-min-layers}(b) and \cref{app:empirical}.}
-\label{tab:lm-main}
 \end{table*}
 
 \paragraph{Standalone \textsc{KLA} is competitive.}
@@ -1339,6 +1339,8 @@ Both are algebraically equivalent, differing only in how Gaussian beliefs are re
 \vspace{4pt}
 \begin{table}[h]
 \centering
+\caption{Two equivalent views at time \(t\): moment (KF) vs.\ canonical (IF). Superscript ``prior'' denotes the predictive prior; unadorned symbols denote the posterior.}
+\label{tab:kf-if-side-by-side}
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.35}
 \small
@@ -1373,8 +1375,6 @@ $\displaystyle z_t \mid v_{1:t} \sim \mathcal N(\mu_t,\,\Sigma_t)\quad$
 \\
 \bottomrule
 \end{tabular}
-\caption{Two equivalent views at time \(t\): moment (KF) vs.\ canonical (IF). Superscript ``prior'' denotes the predictive prior; unadorned symbols denote the posterior.}
-\label{tab:kf-if-side-by-side}
 \end{table}
 
 
