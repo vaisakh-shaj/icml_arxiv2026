@@ -740,9 +740,9 @@ each recurrent update is the closed-form minimiser of a per-token objective that
 trades a \emph{proximal} term (stay close to the decayed memory) against a
 \emph{fit} term (absorb the current token evidence).
 
-Reading the information-mean recursion of \Cref{thm:eta-affine} in moment
+We can show that \our's equivalent moment-form recursion admits an online update that is a \emph{gated RNN update} solving a local \emph{precision-weighted least-squares} objective. Reading the information-mean recursion of \Cref{thm:eta-affine} in moment
 coordinates, $\boldsymbol{\mu}_t = \boldsymbol{\eta}_t\oslash\boldsymbol{\lambda}_t$, collapses the
-predict/update pair into a single gated linear recurrence---the diagonal/scalar instance of the \our row of \cref{tab:online-learning}:
+predict/update pair into this single gated recurrence - the diagonal/scalar instance of the \our row of \cref{tab:online-learning}:
 \begin{restatable}[Posterior-mean recursion as a gated RNN update]{corollary}{CorMomentForm}
 \label{cor:moment-form}
 The moment-form posterior mean $\boldsymbol{\mu}_t = \boldsymbol{\eta}_t\oslash\unc{\boldsymbol{\lambda}_t}$ of the information recursion in \Cref{thm:eta-affine} satisfies the gated recurrence
@@ -754,8 +754,7 @@ The moment-form posterior mean $\boldsymbol{\mu}_t = \boldsymbol{\eta}_t\oslash\
 \end{equation}
 the diagonal/scalar instance of the \our state update in \cref{tab:online-learning}.
 \end{restatable}
-\noindent We prove \cref{cor:moment-form} in \cref{app:theorems-proofs}, using $\boldsymbol{\lambda}_t^{\mathrm{prior}}=\boldsymbol{\rho}_t\odot\boldsymbol{\lambda}_{t-1}$ from Step~1 of \Cref{Th:Mobius}.
-This $\boldsymbol{\mu}_t$ is the exact minimiser $\arg\min_{\boldsymbol{\mu}} L_t$ of the
+\noindent We prove \cref{cor:moment-form} in \cref{app:theorems-proofs}. Concretely, this gated update is the exact minimiser $\boldsymbol{\mu}_t = \arg\min_{\boldsymbol{\mu}} L_t$ of the
 precision-weighted least-squares objective
 \begin{equation}
 L_t(\boldsymbol{\mu}) = \unc{\boldsymbol{\Lambda}_t^{\mathrm v}}\,\bigl\|\mathbf{v}_t - \mathbf{k}_t\odot\boldsymbol{\mu}\bigr\|^2
@@ -766,7 +765,7 @@ balancing a fit term (weighted by the observation precision $\boldsymbol{\Lambda
 against a proximal term anchoring $\boldsymbol{\mu}$ to the propagated mean
 $\bar{\mathbf{a}}_t\odot\boldsymbol{\mu}_{t-1}$ with weight the prior precision
 $\unc{\boldsymbol{\lambda}_t^{\mathrm{prior}} = \boldsymbol{\rho}_t\odot\boldsymbol{\lambda}_{t-1}}$
---- the history-dependent factor $\boldsymbol{\rho}_t$ of \cref{eq:lambda_gate_view}, i.e.\ the
+ - the history-dependent factor $\boldsymbol{\rho}_t$ of \cref{eq:lambda_gate_view}, i.e.\ the
 prior-to-previous precision ratio. \Cref{tab:online-learning} places \our in this
 template alongside representative delta-rule and gated mixers. The
 process-noise parameter $\bar{\mathbf{p}}_t$ never appears explicitly in the
