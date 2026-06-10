@@ -288,7 +288,7 @@ Despite their efficiency, adoption of SSMs is not as widespread as attention-bas
 Recent work reinterprets modern SSMs and linear RNNs, including Mamba, as gated variants of linear attention~(GLA)~\citep{yang2023gated}, where performance largely depends on how gates are defined. In all of these, the underlying hidden state updates are linear or affine, which limits their expressivity compared to softmax attention, whose normalisation induces nonlinear interactions between tokens.
 Furthermore, none of these represent state uncertainty explicitly. This contrasts with longstanding probabilistic linear state-space formalisms whose Kalman-filter updates carry explicit state uncertainty and update it through nonlinear precision recursions.
 
-In this paper, we ask: {\em Can we overcome the linear update constraints common to current GLA models to develop a state-space block that efficiently implements Kalman-like updates?}
+In this paper, we ask: {\em Can we overcome the linear update constraints common to current GLA models to develop a state-space block that efficiently implements exact Kalman Filter updates?}
 
 We introduce \textbf{Kalman Linear Attention (\our)}, which formulates sequence modelling as a Bayesian filtering problem. \our models two sources of uncertainty: process noise, which captures uncertainty in state evolution, and observation noise, which captures uncertainty in the information provided by each input token.
 Crucially, this uncertainty is not merely an output: it directly controls how new information is gated in state spaces.\looseness-1
