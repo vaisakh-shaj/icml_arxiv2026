@@ -462,7 +462,7 @@ $p(\mathbf{z}_t \mid \mathbf{o}_{1:t})$ online, recursively combining a \emph{dy
 When the dynamics and observations are linear with Gaussian noise, we obtain a linear-Gaussian state-space model:\looseness-1
 \begin{align}
 \mathbf{z}_t &= \mathbf{A}_t \mathbf{z}_{t-1} + \mathbf{w}_t,
-\qquad \mathbf{w}_t \sim \mathcal{N}(\mathbf{0}, \mathbf{Q}_t), \label{eq:lgssm_dyn}\\
+\qquad \mathbf{w}_t \sim \mathcal{N}(\mathbf{0}, \mathbf{P}_t), \label{eq:lgssm_dyn}\\
 \mathbf{o}_t &= \mathbf{C}_t \mathbf{z}_t + \mathbf{v}_t,
 \qquad \mathbf{v}_t \sim \mathcal{N}(\mathbf{0}, \bm\Sigma^{\mathrm{obs}}_t), \label{eq:lgssm_obs}
 \end{align}
@@ -1399,7 +1399,7 @@ In contrast, `noise' in diffusion models is an \emph{algorithmic corruption} del
 \begin{proof}[Proof of \Cref{Th:Mobius}]
 Consider the 1D (or diagonal) linear--Gaussian state space model
 \[
-z_t = a_t\,z_{t-1} + \varepsilon_t,\qquad \varepsilon_t \sim \mathcal N(0,p_t),\qquad
+z_t = \bar{a}_t\,z_{t-1} + \varepsilon_t,\qquad \varepsilon_t \sim \mathcal N(0,\bar{p}_t),\qquad
 v_t = k_t\,z_t + \nu_t,\qquad \nu_t \sim \mathcal N(0,(\Lambda_t^{\mathrm{v}})^{-1}),
 \]
 and define the posterior precision
@@ -1408,9 +1408,9 @@ $\lambda_{t} \coloneqq \mathrm{Var}(z_t\mid v_{1:t})^{-1}$.
 \textbf{Step 1 (Information-form predict/update).}
 \[
 \text{(predict)}\quad
-\lambda_{t}^{\mathrm{prior}} \;=\; \bigl(a_t^2 \lambda_{t-1}^{-1} + p_t\bigr)^{-1}
+\lambda_{t}^{\mathrm{prior}} \;=\; \bigl(\bar{a}_t^2 \lambda_{t-1}^{-1} + \bar{p}_t\bigr)^{-1}
 \;=\;
-\frac{\lambda_{t-1}}{a_t^2 + p_t\,\lambda_{t-1}},
+\frac{\lambda_{t-1}}{\bar{a}_t^2 + \bar{p}_t\,\lambda_{t-1}},
 \qquad
 \text{(update)}\quad
 \lambda_t \;=\; \lambda_t^{\mathrm{prior}} + k_t^2 \Lambda_t^{\mathrm{v}}.
@@ -1421,11 +1421,11 @@ Eliminate the intermediate $\lambda_t^{\mathrm{prior}}$ to obtain
 \[
 \lambda_t
 \;=\;
-\frac{\lambda_{t-1}}{a_t^2 + p_t\,\lambda_{t-1}}
+\frac{\lambda_{t-1}}{\bar{a}_t^2 + \bar{p}_t\,\lambda_{t-1}}
 \;+\;
 k_t^2 \Lambda_t^{\mathrm{v}}
 \;=\;
-\frac{(1 + p_t\,k_t^2 \Lambda_t^{\mathrm{v}})\,\lambda_{t-1} + a_t^2 k_t^2 \Lambda_t^{\mathrm{v}}}{p_t\,\lambda_{t-1} + a_t^2}.
+\frac{(1 + \bar{p}_t\,k_t^2 \Lambda_t^{\mathrm{v}})\,\lambda_{t-1} + \bar{a}_t^2 k_t^2 \Lambda_t^{\mathrm{v}}}{\bar{p}_t\,\lambda_{t-1} + \bar{a}_t^2}.
 \]
 Hence $\lambda_t$ is a linear--fractional (M\"{o}bius) transform of $\lambda_{t-1}$,
 \[
@@ -1439,8 +1439,8 @@ M_t \;=\;
 \end{pmatrix}
 \;=\;
 \begin{pmatrix}
-1 + p_t\,\phi_t & a_t^2 \phi_t \\
-p_t & a_t^2
+1 + \bar{p}_t\,\phi_t & \bar{a}_t^2 \phi_t \\
+\bar{p}_t & \bar{a}_t^2
 \end{pmatrix},
 \]
 where $\phi_t \coloneqq k_t^2 \Lambda_t^{\mathrm{v}}$. Thus, the precision recursion is a M\"{o}bius transformation with the stated matrix form.
@@ -1493,26 +1493,26 @@ $\Lambda_t^{\mathrm{v}}$ denote the value precision. The information-form measur
 \]
 so the observation contribution is affine with coefficient $k_t\,\Lambda_t^{\mathrm{v}}$.
 
-For the time-prediction of the information mean, use $\mu_t^{\mathrm{prior}} = a\,\mu_{t-1}$ and
+For the time-prediction of the information mean, use $\mu_t^{\mathrm{prior}} = \bar{a}_t\,\mu_{t-1}$ and
 $\eta_t^{\mathrm{prior}} = \Lambda_t^{\mathrm{prior}} \mu_t^{\mathrm{prior}}$. Eliminating the means gives
 \[
-\eta_t^{\mathrm{prior}} \;=\; \Lambda_t^{\mathrm{prior}}\, a\, \mu_{t-1}
-\;=\; \Lambda_t^{\mathrm{prior}}\, a\, \Lambda_{t-1}^{-1}\,\eta_{t-1}.
+\eta_t^{\mathrm{prior}} \;=\; \Lambda_t^{\mathrm{prior}}\, \bar{a}_t\, \mu_{t-1}
+\;=\; \Lambda_t^{\mathrm{prior}}\, \bar{a}_t\, \Lambda_{t-1}^{-1}\,\eta_{t-1}.
 \]
 Hence, given the (known) precision path $\{\Lambda_t, \Lambda_t^{\mathrm{prior}}\}$,
 \[
-\eta_t \;=\; \underbrace{\bigl(\Lambda_t^{\mathrm{prior}}\, a\, \Lambda_{t-1}^{-1}\bigr)}_{\displaystyle f_t}\,\eta_{t-1}
+\eta_t \;=\; \underbrace{\bigl(\Lambda_t^{\mathrm{prior}}\, \bar{a}_t\, \Lambda_{t-1}^{-1}\bigr)}_{\displaystyle f_t}\,\eta_{t-1}
 \;+\; k_t\,\Lambda_t^{\mathrm{v}}\,v_t,
 \qquad
 \mu_t \;=\; \Lambda_t^{-1}\eta_t.
 \]
 Finally, substituting the information-form predict step
-$\Lambda_t^{\mathrm{prior}} = \Lambda_{t-1}/(a^2 + p\,\Lambda_{t-1})$ (Step~1 of the proof of \Cref{Th:Mobius}) eliminates
+$\Lambda_t^{\mathrm{prior}} = \Lambda_{t-1}/(\bar{a}_t^2 + \bar{p}_t\,\Lambda_{t-1})$ (Step~1 of the proof of \Cref{Th:Mobius}) eliminates
 $\Lambda_t^{\mathrm{prior}}$ from the forget gate,
 \[
-f_t \;=\; \Lambda_t^{\mathrm{prior}}\, a\, \Lambda_{t-1}^{-1}
-\;=\; \frac{a}{a^2 + p\,\Lambda_{t-1}}
-\;=\; \bigl(a^2 + p\,\Lambda_{t-1}\bigr)^{-1} a,
+f_t \;=\; \Lambda_t^{\mathrm{prior}}\, \bar{a}_t\, \Lambda_{t-1}^{-1}
+\;=\; \frac{\bar{a}_t}{\bar{a}_t^2 + \bar{p}_t\,\Lambda_{t-1}}
+\;=\; \bigl(\bar{a}_t^2 + \bar{p}_t\,\Lambda_{t-1}\bigr)^{-1} \bar{a}_t,
 \]
 which is exactly the forget gate in the statement of \Cref{thm:eta-affine}. This proves the claimed affine form.
 \end{proof}
