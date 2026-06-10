@@ -946,13 +946,7 @@ Finally, probabilistic decoding (\textsc{KLA}+, marginalisation under the learne
 \paragraph{Mechanistic behaviour: posterior uncertainty visualisations.}
 To characterise how \textsc{KLA} filters information, we visualise the posterior variance on Selective Copy (\cref{fig:posterior-var-sc}). Rather than claiming calibrated uncertainty estimation, we use it as a diagnostic of the model's internal filtering dynamics. In Selective Copy, the posterior variance generally decreases over time as evidence accumulates, while sharp variance spikes align with copy-relevant positions, indicating timesteps where the model treats the input as especially informative for updating its belief.
 
-\paragraph{Long-context associative recall (MQAR).}
-As a stress test of the single-block primitive under heavy memory load, we evaluate on Multi-Query Associative Recall (MQAR)~\citep{arora2023zoology}, which directly probes the capacity of a fixed-size recurrent state to store and retrieve many key-value associations.
-Following the Zoology benchmark, we adopt a considerably harder configuration than typically studied - sequence length $T{=}2048$ with vocabulary size $V{=}256$ - which directly probes the \emph{storage-capacity} limits of fixed-size states.
-\textsc{KLA} consistently outperforms Mamba across all dimensions and substantially outperforms GLA (which fails to learn the task in this extreme setting), reaching near-perfect accuracy ($>95\%$) at dimension $256$; GDN's delta rule is stronger at the lowest dimensions, where it also operates with a larger effective state.
-We attribute \textsc{KLA}'s robustness to its M\"{o}bius precision updates (\cref{eq:lambda_gate_view}), which adaptively down-weight new observations once the state saturates --- an implicit, learned compression mechanism analogous to selective pattern storage in high-capacity associative memories~\citep{storkey1997hopfield}, without requiring explicit dimension scaling. The full dimension sweep is shown in \cref{fig:mqar-results}; the data configuration is given in Appendix~\ref{sec:longcontext-mqar-results}.\looseness-1
-
-\begin{figure*}[t]
+\begin{figure*}[!t]
 \centering
 \begin{subfigure}[c]{0.42\textwidth}
   \centering
@@ -969,6 +963,12 @@ We attribute \textsc{KLA}'s robustness to its M\"{o}bius precision updates (\cre
 \caption{\textbf{Single-block analyses of \textsc{KLA}.} \textbf{(a)} Long-context MQAR ($T{=}2048$, $V{=}256$): \our reaches near-perfect accuracy ($>95\%$) at dimension $256$, outperforming GDN and Mamba, while GLA fails to learn the task in this challenging setting. \textbf{(b)} Process-noise ablation on MAD tasks: fixing $\mathbf{p}_t{=}0$ (deterministic dynamics) collapses the M\"{o}bius precision recurrence to a fixed-gate linear recurrence, degrading the selection-heavy tasks (Selective Copy, Compression) while leaving memorisation and exact recall unchanged (full per-task breakdown in \cref{tab:process-noise-ablation}, Appendix~\ref{sec:gauss-variants}).}
 \label{fig:pnoise-mqar}
 \end{figure*}
+
+\paragraph{Long-context associative recall (MQAR).}
+As a stress test of the single-block primitive under heavy memory load, we evaluate on Multi-Query Associative Recall (MQAR)~\citep{arora2023zoology}, which directly probes the capacity of a fixed-size recurrent state to store and retrieve many key-value associations.
+Following the Zoology benchmark, we adopt a considerably harder configuration than typically studied - sequence length $T{=}2048$ with vocabulary size $V{=}256$ - which directly probes the \emph{storage-capacity} limits of fixed-size states.
+\textsc{KLA} consistently outperforms Mamba across all dimensions and substantially outperforms GLA (which fails to learn the task in this extreme setting), reaching near-perfect accuracy ($>95\%$) at dimension $256$; GDN's delta rule is stronger at the lowest dimensions, where it also operates with a larger effective state.
+We attribute \textsc{KLA}'s robustness to its M\"{o}bius precision updates (\cref{eq:lambda_gate_view}), which adaptively down-weight new observations once the state saturates --- an implicit, learned compression mechanism analogous to selective pattern storage in high-capacity associative memories~\citep{storkey1997hopfield}, without requiring explicit dimension scaling. The full dimension sweep is shown in \cref{fig:mqar-results}; the data configuration is given in Appendix~\ref{sec:longcontext-mqar-results}.\looseness-1
 
 % ------------------------------------------------------------
 \subsection{State Tracking and Permutation-Group Expressivity}
