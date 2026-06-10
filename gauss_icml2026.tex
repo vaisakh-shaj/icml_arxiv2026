@@ -995,7 +995,7 @@ The experiments above isolate \textsc{KLA} as a single ($1$-$2$ block) primitive
 \renewcommand{\arraystretch}{1.15}
 \begin{tabular}{@{}lccccccccc@{}}
 \toprule
-\textbf{Model} & \textbf{LAMB.} & \textbf{HellaS.} & \textbf{PIQA} & \textbf{Arc-E} & \textbf{Arc-C} & \textbf{WinoGr.} & \textbf{OBQA} & \textbf{BoolQ}$^{\dagger}$ & \textbf{Average} \\
+\textbf{Model} & \textbf{LAMB.} & \textbf{HellaS.} & \textbf{PIQA} & \textbf{Arc-E} & \textbf{Arc-C} & \textbf{WinoGr.} & \textbf{OBQA} & \textbf{BoolQ} & \textbf{Average} \\
  & acc\,$\uparrow$ & acc$_n$\,$\uparrow$ & acc\,$\uparrow$ & acc\,$\uparrow$ & acc$_n$\,$\uparrow$ & acc\,$\uparrow$ & acc\,$\uparrow$ & acc\,$\uparrow$ & acc\,$\uparrow$ \\
 \midrule
 GPT-45M             & \best{16.00} & 28.60 & 58.00 & 40.20 & 20.60 & 50.00 & \best{27.40} & 37.40 & 34.78 \\
@@ -1013,8 +1013,7 @@ KLA-180M             & 22.40 & \second{34.00} & \second{63.00} & 50.00 & 26.00 &
 \textbf{GPT+KLA-180M} & \best{30.20} & \best{34.40} & \best{64.20} & \best{55.80} & \best{29.00} & 51.80 & 31.00 & \best{63.20} & \best{44.95} \\
 \bottomrule
 \end{tabular}
-\caption{\textbf{Language modelling at two academic scales.} Zero-shot accuracy (\%) on eight commonsense benchmarks at 45M ($1.8$B tokens) and 180M ($10.9$B tokens). \best{Bold} = best within each size block, \second{underline} = second. Rows above the dashed line are standalone mixers; the row below it is the hybrid GPT$+$\textsc{KLA}, in which only the \emph{final} attention layer of GPT is replaced with a \textsc{KLA} block. Per-size comparisons against the analogous GPT$+$Mamba and GPT$+$GDN hybrids are in \cref{fig:a5-min-layers}(b) and \cref{app:empirical}.
-$^{\dagger}$BoolQ has a ${\sim}62\%$ majority-class baseline; scores near this value should be read with caution and we draw no conclusions from the BoolQ column in isolation.}
+\caption{\textbf{Language modelling at two academic scales.} Zero-shot accuracy (\%) on eight commonsense benchmarks at 45M ($1.8$B tokens) and 180M ($10.9$B tokens). \best{Bold} = best within each size block, \second{underline} = second. Rows above the dashed line are standalone mixers; the row below it is the hybrid GPT$+$\textsc{KLA}, in which only the \emph{final} attention layer of GPT is replaced with a \textsc{KLA} block. Per-size comparisons against the analogous GPT$+$Mamba and GPT$+$GDN hybrids are in \cref{fig:a5-min-layers}(b) and \cref{app:empirical}.}
 \label{tab:lm-main}
 \end{table*}
 
