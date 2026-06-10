@@ -767,17 +767,15 @@ $\bar{\mathbf{a}}_t\odot\boldsymbol{\mu}_{t-1}$ with weight the prior precision
 $\unc{\boldsymbol{\lambda}_t^{\mathrm{prior}} = \boldsymbol{\rho}_t\odot\boldsymbol{\lambda}_{t-1}}$
  - the history-dependent factor $\boldsymbol{\rho}_t$ of \cref{eq:lambda_gate_view}, i.e.\ the
 prior-to-previous precision ratio. \Cref{tab:online-learning} places \our in this
-template alongside representative delta-rule and gated mixers. The
-process-noise parameter $\bar{\mathbf{p}}_t$ never appears explicitly in the
-state update; it enters only \emph{implicitly} through the matrix-M\"obius
-precision recursion of \Cref{Th:Mobius}, via the state-dependent factor
-$\boldsymbol{\rho}_t = \mathbf{1}\oslash(\bar{\mathbf{a}}_t^2 + \bar{\mathbf{p}}_t\odot\boldsymbol{\lambda}_{t-1})$.
-Setting $\bar{\mathbf{p}}_t=\mathbf{0}$ collapses $\boldsymbol{\rho}_t$ to a
-constant and freezes this gate, replacing the M\"obius-structured nonlinear
-update with a linear one: \our reduces to a Mamba-2-style fixed-decay
-recurrence (the design point of concurrent steady-state Kalman
-attention), i.e.\ a recursive least-squares
-variant~\citep{von2025mesanet,peng2026gated}.\looseness-1
+template alongside representative delta-rule and gated mixers. \our's
+nonlinearity is supplied entirely by the process noise $\bar{\mathbf{p}}_t$, which enters
+only through the state-dependent factor $\boldsymbol{\rho}_t$ of the M\"obius precision
+recursion (\Cref{Th:Mobius}). Fixing $\bar{\mathbf{p}}_t=\mathbf{0}$ makes $\boldsymbol{\rho}_t$
+constant and linearises the recursion, collapsing \our to a fixed-forgetting update
+whose precision-normalised readout is exactly a (diagonal) recursive least-squares
+solution - the steady-state-Kalman design point of concurrent
+work~\citep{von2025mesanet,peng2026gated}. We isolate the effect of $\bar{\mathbf{p}}_t$
+in \cref{sec:ablations}.\looseness-1
 
 \begin{table*}[t]
 \centering
